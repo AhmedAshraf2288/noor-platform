@@ -144,8 +144,8 @@ export default function App() {
         <button className="lang-btn" onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}>{lang === 'ar' ? 'EN' : 'عربي'}</button>
         <div className="nav-spacer"></div>
         <div className="nav-links">
-          {user && <a className="login-link" href="#/live">{lang === 'ar' ? 'لايف' : 'Live'}</a>}
-          {user && <a className="login-link" href="#/leaderboard">{lang === 'ar' ? 'لوحة الشرف' : 'Honor'}</a>}
+          {user && user.role !== 'admin' && <a className="login-link" href="#/live">{lang === 'ar' ? 'لايف' : 'Live'}</a>}
+          {user && user.role !== 'admin' && <a className="login-link" href="#/leaderboard">{lang === 'ar' ? 'لوحة الشرف' : 'Honor'}</a>}
           <a className="login-link" href="#/paths">{lang === 'ar' ? 'المسارات' : 'Paths'}</a>
           {user && user.role === 'mod' && <a className="login-link" href="#/mod">{lang === 'ar' ? 'المشرف' : 'Mod'}</a>}
           {user && user.role === 'admin' && <a className="login-link" href="#/admin">{t('adminTag')} <Icon name="shield" size={13} /></a>}
@@ -167,8 +167,8 @@ export default function App() {
         {user && user.role !== 'admin' && <a href="#/student">{t('myDashboard')} <Icon name="book" size={13} /></a>}
         <a href="#/courses">{t('allCourses')}</a>
         <a href="#/paths">{lang === 'ar' ? 'المسارات' : 'Paths'}</a>
-        {user && <a href="#/live">{lang === 'ar' ? 'حصص لايف' : 'Live'}</a>}
-        {user && <a href="#/leaderboard">{lang === 'ar' ? 'لوحة الشرف' : 'Honor board'}</a>}
+        {user && user.role !== 'admin' && <a href="#/live">{lang === 'ar' ? 'حصص لايف' : 'Live'}</a>}
+        {user && user.role !== 'admin' && <a href="#/leaderboard">{lang === 'ar' ? 'لوحة الشرف' : 'Honor board'}</a>}
         {user && user.role === 'mod' && <a href="#/mod">{lang === 'ar' ? 'لوحة المشرف' : 'Moderator'}</a>}
         {user && <a href="#/student">{lang === 'ar' ? 'الإشعارات' : 'Notifications'} <Icon name="bell" size={13} /></a>}
         {user
