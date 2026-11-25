@@ -1,0 +1,13 @@
+{
+  "name": "noor-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Noor educational platform",
+  "scripts": {
+    "build": "npm --prefix server install --omit=dev",
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
