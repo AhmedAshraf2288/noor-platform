@@ -1,0 +1,8 @@
+node_modules/
+data/
+server/uploads/
+.env
+*.log
+/node_modules
+/node_modules
+
