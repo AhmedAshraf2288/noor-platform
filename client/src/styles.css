@@ -142,7 +142,7 @@ a { text-decoration:none; color:inherit; }
 .soc.tg { background:#229ED9; } .soc.tk { background:#111; } .soc.yt { background:#FF0000; } .soc.ig { background:linear-gradient(45deg,#F58529,#DD2A7B); } .soc.fb { background:#1877F2; }
 .support-btn { display:flex; align-items:center; justify-content:space-between; width:100%; max-width:430px; margin:0 auto 16px;
   background:#43798E; color:#fff; font-weight:800; font-size:16px; padding:16px 22px; border-radius:12px; }
-.footer .dev { margin-top:44px; border-top:1px solid rgba(255,255,255,.14); padding:22px 0; font-size:14px; color:#C9D8E0; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+.footer .dev { margin-top:44px; border-top:1px solid rgba(255,255,255,.14); padding:22px 0; font-size:14px; color:#C9D8E0; display:flex; justify-content:center; flex-wrap:wrap; }
 .footer .dev .brackets { color:#F2808A; font-weight:800; }
 
 /* ===== v6 dazzle upgrades ===== */
