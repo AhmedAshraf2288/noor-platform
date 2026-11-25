@@ -188,7 +188,8 @@ export default function App() {
         <div className="flogo"><span className="l1">نــور</span><span className="l2">التعليمية</span></div>
         <p className="tag">التعلم أسهل من أي وقت</p>
         <div className="hr"></div>
-        <div className="dev"><span><span className="brackets">&lt;</span> Developed By <span className="brackets">&gt;</span> فريق نور</span>
+        <div className="dev"><span><span className="brackets">&lt;</span> Developed By <span className="brackets">&gt;
+          </span>Ahmed Ashraf</span>
         <span><span className="brackets">&lt;</span> All Copy Rights Reserved @2026 <span className="brackets">&gt;</span></span></div>
       </footer>
     </AppCtx.Provider>
